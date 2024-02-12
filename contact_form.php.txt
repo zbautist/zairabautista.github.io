@@ -1,0 +1,25 @@
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $message = $_POST["message"];
+
+    // Set your email address where you want to receive the form submissions
+    $to = "zbautist@cbu.edu";
+
+    // Set the subject of the email
+    $subject = "New Form Submission";
+
+    // Compose the email message
+    $email_message = "Name: $name\n";
+    $email_message .= "Email: $email\n";
+    $email_message .= "Message:\n$message";
+
+    // Use the mail() function to send the email
+    mail($to, $subject, $email_message);
+
+    // Redirect the user after submitting the form
+    header("Location: thank-you.html");
+    exit();
+}
+
