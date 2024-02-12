@@ -1,0 +1,249 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaira</title>
+    <link rel="icon" href="sunnylogo.png">
+    <style>
+        body, h1, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url('sunsetlong.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'cursive', Tahoma;
+            color: white;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        table {
+            margin-bottom: 20px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 20px;
+            height: 50px;
+        }
+
+        .welcome-container {
+            text-align: center;
+            margin-top: 10%;
+            color: #FFF3E0;
+            font-size: 2em;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icons img {
+            margin-left: 10px;
+        }
+
+        .button {
+            width: 100px;
+            height: 30px;
+            background-color: #FFF3E0;
+            border: 0;
+            color: white;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .spacer {
+            background-color: #A1887F;
+            height: 50px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .welcome-container {
+                margin-top: 5%;
+                font-size: 1.5em;
+            }
+
+            .button {
+                width: 80px;
+                height: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body bgcolor="#F9FBE7" style="color: white; font-family: verdana; display: flex; flex-direction: column; align-items: center; text-align: center; margin: 0; min-height: 100vh;">
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+<div class="spacer"></div>
+
+<table border="0" width="1300" height="500" align="center" cellspacing="4" cellpadding="7">
+
+    <tr height="100">
+        <td width="100"><img src="sunnylogo.png" width="90" alt="Description of the image"></td>
+        <td align="center" width="150" height="50"><a href="zaira'spersonalwebpage.html" title="Go to Home"><button class="button"><b><big>HOME</big></b></button></a></td>
+        <td align="center" width="150" height="50"><a href="#aboutus" title=" Go to About"><button class="button"><b><big>ABOUT</big></b></button></a></td>
+        <td align="center" width="150" height="50"><a href="#gallery" title=" Go to Gallery"><button class="button"><b><big>GALLERY</big></b></button></a></td>
+        <td align="center" width="150" height="50"><a href="#more" title=" Go to More"><button class="button"><b><big>MORE</big></b></button></a></td>
+        <td align="center" width="150" height="50"><a href="#contactme" title=" Go to Contact"><button class="button"><b><big>CONTACT</big></b></button></a></td>
+    </tr>
+
+    <!-- Welcome Section -->
+    <tr height="400" width="1300">
+        <td colspan="6" align="center" class="welcome-container">
+            <p><big><big><b>WELCOME</b></big></big></p>
+        </td>
+    </tr>
+</table>
+
+<div class="button-container">
+    <div class="social-icons">
+        <a href="https://www.facebook.com/zaira.bautista.71/" title="Facebook"><img src="facebook.png" width="30" height="30"></a>
+        <a href="https://www.instagram.com/miche_zari/" title="Instagram"><img src="Instagram1.png" width="30" height="30"></a>
+    </div>
+</div>
+
+<!-- About Me -->
+<div id="aboutus" style="margin-top: 300px;">
+    <table border="0" width="1300" height="90" align="center" bgcolor="#F9FBE7" style="border-collapse: separate;">
+        <tr>
+            <td rowspan="2" width="100" height="500"></td>
+            <td width="500" height="500">
+                <p style="margin-right: 30px;">
+                    <big><big><b><span style="color:khaki;  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;"> Who is Zaira Bautista?</span></b></big></big><br/><br/>
+                    <big>
+                        <span style="color: DimGray;">Hey, y'all! I'm Zaira Bautista, and I'm all about Marketing—especially the content creation side. I thrive on crafting innovative videos and graphics that draw people in, enticing them to explore the captivating stories behind every brand. I pour my passion for content creation into promoting things that truly resonate with me, such as sustainability, fashion, and music—given that I am an avid music maker myself, a proud volunteer, and a fashion enthusiast.</span>
+                    </big>
+                </p>
+
+                <!-- List Section -->
+                <ul style="color: #A1887F; list-style-type: disc; margin-left: 20px;">
+                    <li>Passionate about Marketing and Content Creation</li>
+                    <li>Avid music maker</li>
+                    <li>Proud volunteer</li>
+                    <li>Fashion enthusiast</li>
+                </ul>
+            </td>
+            <td align="center" width="700" height="500">
+                <img src="zairapic2.jpg" width="600" height="400">
+            </td>
+        </tr>
+        <tr>
+            <td width="300"></td>
+        </tr>
+    </table>
+</div>
+
+<!-- Content Gallery -->
+<div id="gallery" style="margin-top: 50px; background-color: #FFF59D">
+    <table border="0" width="1300" height="100" align="center" bgcolor="#FFF59D">
+        <tr>
+            <td>
+                <center>
+                    <p style="width:200;height:10;color:white; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">
+                        <big><big><b>GALLERY: A FEW EXAMPLES</b></big></big>
+                    </p>
+                </center>
+            </td>
+        </tr>
+    </table>
+
+    <table style="border:0;border-collapse:collapse;background-color: #FFF59D;margin: 0 auto;" width="1000" height="300" align="center">
+        <tr>
+            <td align="center" width="300" height="500"><img src="valentinespink.png" width="300" height="400"></td>
+            <td align="center" width="300" height="500"><img src="TapRouteWordPuzzle.png" width="300" height="400"></td>
+            <td align="center" width="300" height="500"><img src="green.png" width="300" height="400"></td>
+            <td align="center" width="300" height="500"><img src="muertos.png" width="300" height="400"></td>
+        </tr>
+    </table>
+</div>
+
+<!-- MORE -->
+<div id="more" style="margin-top: 100px;">
+    <table border="0" width="1300" height="100" align="center" bgcolor="#FFF59D">
+    </table>
+
+    <table style="border:0;border-collapse:collapse;background-color: #FFF59D;margin: -50px auto;" width="1300" height="300" align="center">
+        <tr>
+            <td>
+                <center>
+                    <p style="width:250;height:30;background-color:#FFF59D;border:0;color:white; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">
+                        <big><big><b>MORE</b></big></big>
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DGA5wOmwtJY" frameborder="0" allowfullscreen></iframe>
+                </center>
+            </td>
+        </tr>
+    </table>
+
+    <table style="border:0;border-collapse:collapse;background-color: #FFF59D;margin: 0 auto;" width="1300" height="200" align="center">
+        <tr>
+            <td>
+                <center>
+                    <span style="color: DimGray;">Here goes a PDF<br>where I'm included as the Southeastern<br>Writing Conference social media specialist <a href="https://southeasternwritingcenter.wildapricot.org/resources/Documents/conference/2023/swca_program_2023.pdf" target="_blank">Southeastern Writing Conference PDF</a></span>
+                </center>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!-- CONTACT ME -->
+<div id="contactme" style="margin-top: 300px;">
+    <table border="0" width="1300" height="100" align="center" bgcolor="#F9FBE7">
+        <tr>
+            <td>
+                <center>
+                    <p style="width:250;height:30;background-color:#F9FBE7;border:0;color:khaki; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">
+                        <big><big><b>CONTACT ME</b></big></big>
+                    </p>
+                </center>
+            </td>
+        </tr>
+    </table>
+
+    <table border="0" width="1300" height="300" align="center" bgcolor="#F9FBE7">
+        <tr>
+            <td width="300"></td>
+            <td align="left">
+               <form action="" method="post">
+    <p align="left" style="color: DimGray;">Full Name</p>
+    <input type="text" name="name"><br>
+    <p align="left" style="color: DimGray;">Email</p>
+    <input type="email" name="email"><br><br><br>
+    <input type="submit" value="Submit">
+</form>
+            </td>
+            <td align="right">
+                <textarea rows="12" cols="50" name="message"></textarea></br></br></br>
+            </td>
+            <td width="300"></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
+
+
+
